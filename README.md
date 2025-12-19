@@ -130,26 +130,27 @@ This project:
 ## 🚀 Quick Start
 
 Follow these steps to get Ghostclock up and running:
+1. **Clone the repository**
+git clone https://github.com/Wingedarrows03/Ghostclock.git
 
-1. **Install dependencies**
-pip install -r requirements.txt
-
-
-2. **Start Ollama with mistral**
-ollama run mistral
+  cd Ghostclock
 
 
-3. **Run baseline timing analysis**
-python ghostclock/layer1_baseline.py
+3. **Activate virtual environment**
 
-
-4. **Progress through layers**
    
-python ghostclock/layer2_differential.py
-
-python ghostclock/layer3_classification.py
-
-python ghostclock/layer4_classifier.py
+  source venv/bin/activate
 
 
-> **Note:** Ensure Ollama is running before executing any layer scripts.
+5. **Run the classifier layers progressively**
+
+python layer1_classifier.py
+
+python layer2_classifier.py
+
+python layer3_classifier.py
+
+python layer4_classifier.py
+
+
+> **Note:** Ensure Ollama is running with the mistral model before executing the classifier scripts.
